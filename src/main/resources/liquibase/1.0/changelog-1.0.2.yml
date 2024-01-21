@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: Add age column to person table
+      author: Javidan Hajiyev
+      changes:
+        - addColumn:
+            tableName: person
+            columns:
+              - column:
+                  name: age
+                  type: int

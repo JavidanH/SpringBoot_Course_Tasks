@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: Alter person table for column size
+      author: Javidan Hajiyev
+      changes:
+        - modifyDataType:
+            tableName: person
+            columnName: firstname
+            newDataType: VARCHAR(60)
+
+        - modifyDataType:
+            tableName: person
+            columnName: lastname
+            newDataType: VARCHAR(60)
